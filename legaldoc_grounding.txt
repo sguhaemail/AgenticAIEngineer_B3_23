@@ -1,0 +1,325 @@
+============================================================================================
+LEGAL DOCUMENT REVIEW SYSTEM  –  KNOWLEDGE BASE & GROUNDING CONTEXT
+============================================================================================
+This file is the internal knowledge base used by all agents in the Legal Document Review
+System. It contains compliance framework summaries, common clause risk indicators, legal
+red flags, regulatory requirements, and recommended remediation actions.
+============================================================================================
+
+
+--------------------------------------------------------------------------------------------
+SECTION 1: COMPLIANCE FRAMEWORKS & KEY REQUIREMENTS
+--------------------------------------------------------------------------------------------
+
+GDPR (General Data Protection Regulation – EU 2016/679)
+  • Lawful basis for processing personal data must be stated explicitly.
+  • Data subjects have rights: access, erasure, portability, rectification, objection.
+  • Data retention periods must be defined and justified.
+  • Data breach notification to supervisory authority within 72 hours.
+  • Data Processing Agreements (DPAs) required with all third-party processors.
+  • Privacy by Design and by Default must be embedded in contracts involving personal data.
+  • Cross-border data transfers require Standard Contractual Clauses (SCCs) or adequacy decisions.
+  • Fines: up to €20 million or 4% of global annual turnover, whichever is higher.
+  RED FLAGS: Unlimited data retention clauses; no data subject rights provisions;
+             missing DPA or SCCs for international transfers; vague "legitimate interests" basis.
+
+HIPAA (Health Insurance Portability and Accountability Act – US)
+  • Protected Health Information (PHI) must be safeguarded under Privacy and Security Rules.
+  • Business Associate Agreements (BAAs) required for any vendor handling PHI.
+  • Minimum necessary standard: disclose only the minimum PHI necessary.
+  • Patient rights: access, amendment, accounting of disclosures.
+  • Breach notification to HHS and affected individuals within 60 days.
+  • Technical safeguards: encryption at rest and in transit for ePHI.
+  • Fines: $100 – $50,000 per violation; up to $1.9 million per category per year.
+  RED FLAGS: No BAA with healthcare vendors; unrestricted PHI sharing; no encryption clauses;
+             missing breach notification timelines; broad liability waivers covering PHI misuse.
+
+SOX (Sarbanes-Oxley Act – US Public Companies)
+  • Section 302: CEO/CFO must certify accuracy of financial reports.
+  • Section 404: Management must assess and report on internal controls over financial reporting.
+  • Section 806: Whistleblower protections for employees reporting fraud.
+  • Audit committee independence requirements.
+  • Document retention: financial records must be retained for 7 years.
+  • Destruction or alteration of financial records is a criminal offense.
+  RED FLAGS: Clauses permitting destruction of financial records before 7 years; indemnification
+             of executives for fraudulent financial reporting; non-disclosure clauses that could
+             silence whistleblowers; gaps in audit trail provisions.
+
+CCPA (California Consumer Privacy Act – California, US)
+  • Consumers have rights: know, delete, opt-out of sale, non-discrimination.
+  • "Sale" of personal information requires an opt-out mechanism ("Do Not Sell My Info").
+  • Service Provider Agreements must prohibit use of personal information beyond the service.
+  • Must respond to consumer requests within 45 days.
+  • Security reasonable to the nature of the information.
+  • CPRA amendments (2023): add right to correct; introduce sensitive personal information category.
+  RED FLAGS: Broad data-sharing definitions that constitute "sale"; no opt-out mechanism;
+             service provider agreements lacking CCPA-compliant restrictions; missing deletion rights.
+
+INTELLECTUAL PROPERTY (IP)
+  • Work-for-hire provisions must clearly identify IP ownership.
+  • Assignment clauses should specify what is assigned, to whom, and for what consideration.
+  • License scope: exclusive vs. non-exclusive; perpetual vs. term; field-of-use restrictions.
+  • Non-compete and non-solicitation clauses must meet reasonableness standards (geographic scope,
+    duration, legitimate business interest).
+  • Trade secret protections under the Defend Trade Secrets Act (DTSA) and state law.
+  RED FLAGS: Overbroad IP assignment (including pre-existing IP); perpetual irrevocable licenses
+             with no compensation; unreasonably broad or indefinite non-competes; missing IP
+             indemnification against third-party infringement claims.
+
+CONTRACT LAW – GENERAL PRINCIPLES
+  • Offer, acceptance, consideration, intent to be bound.
+  • Entire Agreement / Merger clause supersedes all prior oral/written representations.
+  • Severability: if one clause is unenforceable, the rest of the agreement remains valid.
+  • Force Majeure: must specify triggering events (pandemic, natural disaster, government action).
+  • Governing Law and Jurisdiction must be stated.
+  • Choice of Law and Venue can affect enforceability and litigation cost.
+  RED FLAGS: Missing consideration; contracts with minors or incapacitated parties; lack of
+             governing law clause; overly broad force majeure that excuses routine performance.
+
+
+--------------------------------------------------------------------------------------------
+SECTION 2: COMMON LEGAL CLAUSE TYPES & RISK INDICATORS
+--------------------------------------------------------------------------------------------
+
+INDEMNIFICATION CLAUSES
+  • Risk Level: HIGH by default – unlimited, mutual, and unilateral variants.
+  • One-sided indemnification (indemnifying the stronger party only) is a high-risk red flag.
+  • Uncapped indemnification obligations expose parties to unlimited financial liability.
+  • Best practice: indemnification should be mutual, capped, and limited to direct damages.
+  • Carve-outs for gross negligence and wilful misconduct are standard.
+
+LIABILITY CLAUSES (Limitation of Liability)
+  • Risk Level: MEDIUM-HIGH.
+  • Caps on liability should be proportional to the contract value (typically 12 months' fees).
+  • Consequential, indirect, and punitive damages waivers are common but can be unenforceable.
+  • Uncapped liability clauses for IP infringement and data breaches are market standard.
+  • Mutual caps are preferred; one-sided caps favour the drafting party.
+
+TERMINATION CLAUSES
+  • Risk Level: MEDIUM.
+  • Termination for convenience without cause and with reasonable notice is standard.
+  • Immediate termination triggers must be clearly defined (material breach, insolvency, etc.).
+  • Survival clauses list obligations that persist post-termination (confidentiality, IP ownership).
+  • Inadequate notice periods or unrestricted termination rights create operational risk.
+
+CONFIDENTIALITY / NDA CLAUSES
+  • Risk Level: MEDIUM.
+  • Definition of Confidential Information must be specific; broad catch-all definitions are risky.
+  • Standard exceptions: public domain, prior knowledge, independent development, legal compulsion.
+  • Duration must be specified; indefinite confidentiality obligations may be unenforceable.
+  • Return or destruction of confidential information obligations upon termination.
+
+ARBITRATION / DISPUTE RESOLUTION CLAUSES
+  • Risk Level: MEDIUM.
+  • Governing arbitration rules must be named (AAA, JAMS, ICC, UNCITRAL, etc.).
+  • Mandatory binding arbitration with class-action waiver may waive important legal rights.
+  • Seat of arbitration and language must be specified for international contracts.
+  • Emergency relief provisions should preserve the right to seek injunctive relief in court.
+
+DATA PROCESSING & PRIVACY CLAUSES
+  • Risk Level: HIGH when personal data is involved.
+  • Must align with GDPR Article 28 requirements (DPA terms) for EU data.
+  • Sub-processor lists and notification obligations must be included.
+  • Security measures must meet applicable regulatory standards.
+
+PAYMENT TERMS
+  • Risk Level: LOW-MEDIUM.
+  • Net 30/60/90 payment periods; late payment interest should be commercially reasonable.
+  • Invoicing procedures and dispute resolution for invoice disputes.
+
+WARRANTY CLAUSES
+  • Risk Level: MEDIUM.
+  • Implied warranties of merchantability and fitness for purpose.
+  • Disclaimers of warranties must be conspicuous (all-caps in US contracts).
+  • Warranty periods should align with product lifecycle and industry standards.
+
+
+--------------------------------------------------------------------------------------------
+SECTION 3: COMPLIANCE FLAGS & RED FLAGS CHECKLIST
+--------------------------------------------------------------------------------------------
+
+CRITICAL RED FLAGS (Immediate Legal Review Required)
+  [ ] Unlimited or uncapped indemnification obligation for the weaker party
+  [ ] No data processing agreement where personal data is involved
+  [ ] Clauses that waive whistleblower rights (SOX violation)
+  [ ] PHI sharing without a Business Associate Agreement (HIPAA violation)
+  [ ] Cross-border personal data transfers without SCCs or adequacy basis (GDPR violation)
+  [ ] Liability waiver for gross negligence or intentional misconduct
+  [ ] Non-compete clauses with no geographic or time limitations
+  [ ] Clauses purporting to assign pre-existing IP without carve-out
+  [ ] Document destruction provisions conflicting with SOX 7-year retention
+  [ ] Arbitration clause eliminating class action rights without informed consent
+
+HIGH RISK FLAGS (Legal Review Strongly Recommended)
+  [ ] One-sided indemnification favouring the drafting party
+  [ ] Uncapped consequential damages exposure
+  [ ] Broad definition of confidential information with indefinite duration
+  [ ] Missing governing law and jurisdiction clause
+  [ ] Force majeure clause that is overly broad or does not include notice requirements
+  [ ] Automatic renewal clauses with short opt-out windows
+  [ ] Intellectual property license that is irrevocable, perpetual, and royalty-free
+  [ ] Payment terms exceeding Net 90 without interest provisions
+  [ ] Missing dispute resolution escalation steps before arbitration/litigation
+
+MEDIUM RISK FLAGS (Review and Remediation Recommended)
+  [ ] Missing severability clause
+  [ ] Missing entire agreement / merger clause
+  [ ] Warranty disclaimer not in conspicuous text
+  [ ] Termination notice period shorter than 30 days without cause
+  [ ] Missing data breach notification timelines
+  [ ] Sub-processor obligations not clearly defined
+  [ ] Ambiguous performance metrics or SLA definitions
+  [ ] Missing data return/destruction obligation at termination
+
+LOW RISK FLAGS (Standard Review)
+  [ ] Minor inconsistencies in defined terms
+  [ ] Missing counterparts execution clause
+  [ ] Missing amendment procedure (written, signed by both parties)
+  [ ] Unclear invoicing or payment dispute procedure
+
+
+--------------------------------------------------------------------------------------------
+SECTION 4: LEGAL PRECEDENTS & PRINCIPLES
+--------------------------------------------------------------------------------------------
+
+[GDPR-001] Schrems II (C-311/18, CJEU 2020)
+  Invalidated the EU-US Privacy Shield; standard contractual clauses still valid but require
+  supplementary measures for transfers to countries lacking adequate protection.
+  Impact: All contracts involving US data processors handling EU personal data must include
+  updated SCCs (EU Commission 2021) plus Transfer Impact Assessment documentation.
+
+[GDPR-002] Google Spain v AEPD (C-131/12, CJEU 2014) – Right to Erasure
+  Established the "right to be forgotten" as a fundamental right.
+  Impact: Data retention clauses must include erasure mechanisms for personal data.
+
+[HIPAA-001] OCR v. Advocate Health Care (2016) – $5.55M Settlement
+  Largest HIPAA settlement at the time; failure to execute BAAs with business associates
+  and inadequate security risk analysis.
+  Impact: BAA execution is mandatory before any PHI is shared; security clauses must be specific.
+
+[SOX-001] US v. Arthur Andersen LLP (2002)
+  Conviction for obstruction of justice related to document shredding during Enron investigation.
+  Impact: Document retention clauses must not permit early destruction; records hold provisions
+  must be triggered upon notice of investigation.
+
+[IP-001] Effects Associates v. Cohen (9th Cir. 1990)
+  Non-exclusive implied licenses can arise from conduct even without written agreement.
+  Impact: IP assignment and license clauses must be clear and in writing; oral agreements are risky.
+
+[IP-002] Assignment of Inventions – Stanford v. Roche (Supreme Court 2011)
+  Employee invention assignment agreements must be drafted carefully; prior commitments
+  to third parties can override employer assignment clauses.
+  Impact: IP assignment clauses must include representations from assignor regarding absence
+  of prior conflicting obligations.
+
+[CONTRACT-001] Hadley v. Baxendale (1854) – Consequential Damages
+  Limitation on recoverable damages to those foreseeable at the time of contracting.
+  Impact: Consequential damages exclusion clauses are generally enforceable but must be
+  mutual; courts may strike unconscionable one-sided limitations.
+
+[CONTRACT-002] CISG (Vienna Convention on Contracts for Sale of Goods)
+  Applies to international sale of goods contracts between parties in signatory nations
+  unless expressly excluded.
+  Impact: Contracts for international sale of goods should expressly exclude or include CISG.
+
+[DATA-001] FTC v. Wyndham Worldwide Corp. (3rd Cir. 2015)
+  Established FTC authority to regulate company cybersecurity practices under unfair
+  trade practices provisions; failure to implement reasonable security = unfair practice.
+  Impact: Data security clauses must specify reasonable technical and organisational measures;
+  vague security language ("commercially reasonable") is insufficient.
+
+[NLRB-001] NLRB Guidance on Non-Disclosure Agreements (2023 GC Memo 23-05)
+  Overly broad non-disclosure and non-disparagement clauses that can chill Section 7
+  rights (right to organise, discuss working conditions) violate the NLRA.
+  Impact: NDA/non-disparagement clauses in employment-related contracts must include carve-outs
+  for protected concerted activity.
+
+
+--------------------------------------------------------------------------------------------
+SECTION 5: RECOMMENDED REMEDIATION ACTIONS (STANDARD TEMPLATES)
+--------------------------------------------------------------------------------------------
+
+For GDPR Non-Compliance:
+  1. Add a Data Processing Agreement (DPA) as an exhibit incorporating GDPR Article 28 terms.
+  2. Insert Standard Contractual Clauses (EU Commission Implementing Decision 2021/914).
+  3. Define specific data retention periods with deletion/anonymisation procedures.
+  4. Add data subject rights fulfilment obligations and timelines.
+  5. Include 72-hour breach notification obligations to supervisory authority.
+
+For HIPAA Non-Compliance:
+  1. Execute a Business Associate Agreement (BAA) before any PHI is shared.
+  2. Add minimum-necessary standard language for PHI use and disclosure.
+  3. Specify encryption requirements for ePHI at rest and in transit (AES-256 minimum).
+  4. Include breach notification obligations within 60 days to HHS and affected individuals.
+
+For SOX Non-Compliance:
+  1. Add a 7-year document retention clause covering all financial records.
+  2. Include a legal hold trigger provision upon notice of investigation or litigation.
+  3. Remove or limit executive indemnification that could cover fraudulent reporting.
+  4. Add whistleblower protection language preserving Section 806 rights.
+
+For IP Clause Issues:
+  1. Add a carve-out for pre-existing IP owned by each party.
+  2. Ensure work-for-hire assignment is limited to work created within the scope of the agreement.
+  3. Define license scope clearly: exclusive/non-exclusive, field of use, territory, duration.
+  4. Add IP infringement indemnification from the party providing technology/content.
+
+For Liability Clause Issues:
+  1. Cap total aggregate liability at 12 months of fees paid in the prior 12-month period.
+  2. Ensure limitations are mutual and do not favour only the drafting party.
+  3. Add carve-outs to liability caps for: IP infringement, breach of confidentiality,
+     gross negligence, wilful misconduct, and death/personal injury.
+  4. Ensure consequential damages disclaimer is conspicuous and mutual.
+
+For Indemnification Issues:
+  1. Make indemnification mutual – each party indemnifies the other for its own breaches.
+  2. Cap indemnification obligations (reference liability cap or insurance coverage).
+  3. Add gross negligence and wilful misconduct carve-outs.
+  4. Include an IP indemnification obligation from technology/IP provider.
+
+For Termination Clause Issues:
+  1. Add termination for convenience with minimum 30-day written notice.
+  2. Define material breach and include a cure period (typically 30 days).
+  3. Add a survival clause listing post-termination obligations.
+  4. Include data return/destruction obligations within 30–60 days of termination.
+
+For Confidentiality/NDA Issues:
+  1. Narrow the definition of Confidential Information to specifically identified categories.
+  2. Set a reasonable duration (typically 3–5 years; trade secrets may be indefinite).
+  3. Add standard exceptions (public domain, independent development, prior knowledge, legal compulsion).
+  4. Add carve-outs for NLRA Section 7 protected activity in employment-related agreements.
+  5. Add return/destruction of confidential information upon request or termination.
+
+
+--------------------------------------------------------------------------------------------
+SECTION 6: JURISDICTION-SPECIFIC NOTES
+--------------------------------------------------------------------------------------------
+
+UNITED STATES
+  • Non-compete enforceability varies by state: unenforceable in California; strict scrutiny in
+    Minnesota, Oklahoma, North Dakota; enforceable with reasonableness test in most other states.
+  • FTC Final Rule (2024): Bans most non-competes for workers; subject to ongoing litigation.
+  • Arbitration agreements: enforced under Federal Arbitration Act unless unconscionable.
+  • NLRB GC Memo 23-05: Broad NDAs with employees may violate NLRA Section 7.
+
+EUROPEAN UNION
+  • GDPR applies to any contract involving EU personal data regardless of party location.
+  • Digital Services Act (DSA) and Digital Markets Act (DMA) for platform contracts.
+  • EU AI Act: high-risk AI system contracts require conformity assessments and documentation.
+  • French law: non-compete clauses require financial compensation (typically 1/3 of salary).
+  • German law: general terms and conditions (AGB) subject to reasonableness review under
+    §§ 305–310 BGB; unusual clauses may be unenforceable.
+
+UNITED KINGDOM (Post-Brexit)
+  • UK GDPR applies; UK adequacy decisions may differ from EU adequacy decisions.
+  • UK Standard Contractual Clauses (IDTA) for international data transfers from UK.
+  • IR35 off-payroll working rules relevant to contractor engagement agreements.
+
+INDIA
+  • Indian Contract Act 1872; non-compete post-termination clauses largely unenforceable.
+  • Personal Data Protection (DPDP) Act 2023 applies to digital personal data in India.
+  • Information Technology Act 2000 and IT (Amendment) Act 2008 for cybersecurity obligations.
+
+============================================================================================
+END OF LEGAL KNOWLEDGE BASE
+============================================================================================

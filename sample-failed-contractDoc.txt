@@ -1,0 +1,73 @@
+SOFTWARE SERVICES AGREEMENT
+
+This Software Services Agreement ("Agreement") is entered into as of January 1, 2026,
+between Acme Technologies Ltd ("Service Provider") and GlobalCorp Inc ("Client").
+
+1. SERVICES
+   Service Provider agrees to provide cloud-based data analytics software and related
+   professional services as described in Schedule A attached hereto.
+
+2. DATA PROCESSING AND PRIVACY
+   Service Provider may collect, store, and process personal data of Client's employees
+   and customers in connection with the services. Service Provider shall retain all
+   personal data indefinitely and may use such data for its own product improvement
+   purposes without restriction. No data processing agreement is required between the
+   parties. Service Provider is not required to notify Client of any data breaches.
+
+3. INDEMNIFICATION
+   Client shall indemnify, defend, and hold harmless Service Provider from and against
+   any and all claims, losses, damages, liabilities, and expenses (including reasonable
+   attorneys' fees) arising out of or related to Client's use of the services, without
+   limitation or cap. This indemnification obligation is not mutual.
+
+4. LIMITATION OF LIABILITY
+   Service Provider's total liability to Client for any claim arising under this Agreement
+   shall not exceed one hundred dollars ($100), regardless of the nature of the claim.
+   Service Provider shall not be liable for any direct, indirect, incidental, special,
+   consequential, or punitive damages under any circumstances. This limitation applies even
+   in cases of gross negligence or wilful misconduct by Service Provider.
+
+5. INTELLECTUAL PROPERTY
+   All intellectual property created by Client during the course of this Agreement,
+   including pre-existing Client IP and any work product developed independently by
+   Client, is hereby irrevocably assigned in perpetuity to Service Provider at no
+   additional cost. Service Provider grants no license to Client for any of its
+   existing intellectual property.
+
+6. CONFIDENTIALITY
+   Each party agrees to keep confidential all information received from the other party.
+   Confidential information includes any and all information disclosed in any form.
+   This confidentiality obligation shall remain in effect forever and shall survive
+   termination of this Agreement. There are no exceptions to this obligation,
+   including for legally compelled disclosures.
+
+7. TERMINATION
+   Service Provider may terminate this Agreement immediately at any time without cause
+   and without notice. Client may only terminate this Agreement upon providing
+   twenty-four (24) months written notice to Service Provider.
+
+8. NON-COMPETE
+   Following termination of this Agreement, Client shall not engage in any business
+   activity anywhere in the world that is similar to or competitive with any business
+   activity of Service Provider for a period of ten (10) years.
+
+9. GOVERNING LAW
+   This Agreement shall be governed by the laws of the Cayman Islands.
+
+10. DISPUTE RESOLUTION
+    All disputes shall be resolved by binding arbitration. Client waives all rights to
+    participate in class action lawsuits. Client waives the right to seek injunctive
+    relief in any court.
+
+11. FINANCIAL RECORDS
+    All financial records and audit logs generated under this Agreement may be destroyed
+    by either party at any time after ninety (90) days without restriction.
+
+12. WHISTLEBLOWER
+    Client's employees may not disclose any information about this Agreement or
+    Service Provider's practices to any regulatory authority, government body, or
+    third party under any circumstances.
+
+SIGNATURES
+Service Provider: ____________________    Date: ____________
+Client:          ____________________    Date: ____________

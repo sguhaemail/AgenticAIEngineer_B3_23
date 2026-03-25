@@ -1,0 +1,247 @@
+SOFTWARE SERVICES AGREEMENT
+
+This Software Services Agreement ("Agreement") is entered into as of January 1, 2026,
+between Acme Technologies Ltd, a company incorporated in England and Wales
+("Service Provider"), and GlobalCorp Inc, a corporation organised under the laws of
+Delaware, USA ("Client").
+
+1. SERVICES
+   Service Provider agrees to provide cloud-based data analytics software and related
+   professional services as described in Schedule A attached hereto ("Services").
+   Service Provider shall perform the Services in a professional and workmanlike manner
+   consistent with industry standards.
+
+2. DATA PROCESSING AND PRIVACY
+   2.1 The parties acknowledge that Service Provider may process personal data on behalf
+   of Client in connection with the Services. Such processing shall be governed by the
+   Data Processing Agreement ("DPA") attached as Exhibit B, which incorporates the
+   Standard Contractual Clauses (EU Commission Implementing Decision 2021/914) and the
+   UK International Data Transfer Addendum (IDTA) for cross-border transfers.
+
+   2.2 Service Provider shall:
+   (a) Process personal data solely on documented instructions from Client;
+   (b) Retain personal data only for the duration necessary to deliver the Services,
+       and in no event longer than 24 months after termination of this Agreement,
+       after which all personal data shall be deleted or returned to Client;
+   (c) Implement appropriate technical and organisational security measures including
+       AES-256 encryption at rest and TLS 1.3 in transit for all personal data;
+   (d) Notify Client within 72 hours of becoming aware of any personal data breach,
+       as required by GDPR Article 33 and applicable US state laws;
+   (e) Not use Client personal data for Service Provider's own product improvement
+       or any purpose beyond delivering the contracted Services.
+
+   2.3 Client shall have all rights afforded to data subjects under GDPR, HIPAA,
+   CCPA, and applicable data protection laws, including the right to access, correct,
+   delete, and port their personal data upon written request.
+
+3. INDEMNIFICATION
+   3.1 Each party ("Indemnifying Party") shall indemnify, defend, and hold harmless
+   the other party ("Indemnified Party") from and against third-party claims arising
+   from the Indemnifying Party's: (a) breach of this Agreement; (b) gross negligence
+   or wilful misconduct; or (c) infringement of a third party's intellectual property
+   rights in connection with such party's own technology or content.
+
+   3.2 The aggregate indemnification obligation of either party shall not exceed the
+   total fees paid or payable by Client to Service Provider in the twelve (12) months
+   immediately preceding the event giving rise to the claim.
+
+   3.3 Indemnification obligations are mutual and apply equally to both parties.
+
+4. LIMITATION OF LIABILITY
+   4.1 Each party's total aggregate liability arising out of or related to this
+   Agreement shall not exceed the greater of: (a) the total fees paid by Client in the
+   twelve (12) months prior to the event giving rise to the claim; or (b) USD 50,000.
+
+   4.2 Neither party shall be liable for indirect, incidental, special, consequential,
+   or punitive damages, provided that this limitation is mutual and applies equally to
+   both parties.
+
+   4.3 Notwithstanding the foregoing, the limitations in Sections 4.1 and 4.2 shall
+   NOT apply to: (a) a party's indemnification obligations under Section 3;
+   (b) breach of confidentiality obligations; (c) infringement of intellectual property
+   rights; (d) gross negligence or wilful misconduct; or (e) death or personal injury
+   caused by negligence.
+
+5. INTELLECTUAL PROPERTY
+   5.1 Pre-Existing IP. Each party retains all ownership of its pre-existing
+   intellectual property ("Background IP"). Nothing in this Agreement transfers any
+   Background IP from one party to the other.
+
+   5.2 Work Product. All work product, deliverables, and materials specifically created
+   by Service Provider for Client under this Agreement ("Work Product") shall be owned
+   by Client upon full payment of applicable fees. Service Provider hereby assigns all
+   right, title, and interest in such Work Product to Client.
+
+   5.3 Service Provider License. Service Provider grants Client a non-exclusive,
+   non-transferable, limited licence to use Service Provider's Background IP solely
+   to the extent necessary to receive and use the Services during the Term.
+
+   5.4 IP Indemnification. Service Provider shall indemnify Client against third-party
+   claims alleging that the Services infringe any patent, copyright, or trade secret,
+   subject to Client promptly notifying Service Provider of such claims.
+
+   5.5 Each party represents that it has no prior conflicting obligations to third
+   parties that would prevent it from fulfilling its IP obligations under this Agreement,
+   consistent with the principles established in Stanford v. Roche (US Supreme Court 2011).
+
+6. CONFIDENTIALITY
+   6.1 Each party ("Receiving Party") agrees to keep confidential all non-public
+   information disclosed by the other party ("Disclosing Party") that is designated
+   as confidential or that reasonably should be understood to be confidential
+   ("Confidential Information").
+
+   6.2 This confidentiality obligation shall remain in effect for three (3) years
+   following termination of this Agreement. Trade secrets shall be protected for as
+   long as they qualify as trade secrets under applicable law.
+
+   6.3 Standard Exceptions. The obligations in Section 6.1 do not apply to information
+   that: (a) is or becomes publicly available through no fault of the Receiving Party;
+   (b) was known to the Receiving Party prior to disclosure; (c) is independently
+   developed by the Receiving Party without use of Confidential Information; or
+   (d) is required to be disclosed by applicable law, court order, or regulatory
+   authority, provided the Receiving Party gives prompt written notice to the
+   Disclosing Party where legally permitted.
+
+   6.4 Nothing in this Agreement restricts either party's employees from exercising
+   rights protected under applicable labour laws, including the right to discuss
+   working conditions, report violations to regulatory authorities, or engage in
+   protected concerted activity as recognised by the NLRB and Section 7 of the NLRA.
+
+   6.5 Upon termination, each party shall promptly return or destroy the other party's
+   Confidential Information and certify such destruction in writing within 30 days.
+
+7. TERMINATION
+   7.1 Term. This Agreement commences on the Effective Date and continues for an
+   initial term of one (1) year, automatically renewing for successive one-year terms
+   unless either party provides at least 60 days written notice of non-renewal.
+
+   7.2 Termination for Convenience. Either party may terminate this Agreement for
+   any reason upon providing 30 days written notice to the other party.
+
+   7.3 Termination for Cause. Either party may terminate this Agreement immediately
+   upon written notice if the other party: (a) materially breaches this Agreement and
+   fails to cure such breach within 30 days of written notice; (b) becomes insolvent
+   or makes an assignment for the benefit of creditors; or (c) ceases to conduct
+   business in the ordinary course.
+
+   7.4 Effect of Termination. Upon termination, Service Provider shall deliver to
+   Client all Work Product, data, and Confidential Information within 30 days.
+   Clauses 5 (IP), 6 (Confidentiality), 4 (Liability), 3 (Indemnification), and
+   11 (Dispute Resolution) shall survive termination.
+
+8. NON-COMPETE
+   8.1 During the Term of this Agreement, neither party shall solicit or hire the
+   other party's key personnel directly involved in performing the Services without
+   prior written consent.
+
+   8.2 This Agreement does not contain post-termination non-compete restrictions on
+   Client's general business activities. The parties acknowledge that overbroad
+   non-compete obligations may be unenforceable under applicable law, including
+   California Business & Professions Code Section 16600 and the FTC's 2024 guidance
+   on non-compete clauses.
+
+9. GOVERNING LAW AND JURISDICTION
+   9.1 This Agreement shall be governed by and construed in accordance with the laws
+   of the State of New York, USA, without regard to its conflict of law provisions.
+
+   9.2 The United Nations Convention on Contracts for the International Sale of Goods
+   (CISG) is expressly excluded from this Agreement.
+
+   9.3 Each party irrevocably submits to the exclusive jurisdiction of the courts of
+   New York, New York for the resolution of disputes not subject to arbitration.
+
+10. DISPUTE RESOLUTION
+    10.1 Escalation. The parties shall attempt in good faith to resolve any dispute
+    through direct negotiation between senior representatives within 30 days of written
+    notice of a dispute.
+
+    10.2 Mediation. If direct negotiation fails, the parties shall attempt mediation
+    before a mutually agreed mediator within 30 days.
+
+    10.3 Arbitration. If mediation fails, disputes shall be finally resolved by
+    binding arbitration administered by JAMS under its Comprehensive Arbitration Rules.
+    The seat of arbitration shall be New York, New York. The language of arbitration
+    shall be English.
+
+    10.4 Emergency Relief. Notwithstanding Section 10.3, either party retains the
+    right to seek emergency injunctive or other equitable relief from a court of
+    competent jurisdiction to prevent irreparable harm pending arbitration.
+
+    10.5 Class Actions. Nothing in this Agreement shall be construed to waive any
+    party's rights under applicable consumer protection or labour laws, including
+    class action rights where such waivers are not permitted by law.
+
+11. FINANCIAL RECORDS AND AUDIT
+    11.1 Both parties shall retain all financial records, audit logs, and documentation
+    related to this Agreement for a minimum of seven (7) years after the close of each
+    fiscal year, in compliance with the Sarbanes-Oxley Act (SOX) Section 802.
+
+    11.2 In the event either party receives notice of a legal hold, investigation, or
+    regulatory inquiry, all document destruction obligations are immediately suspended
+    and a litigation hold shall be applied to all potentially relevant records.
+
+    11.3 Service Provider shall provide Client with reasonable access to relevant
+    financial records and audit logs upon 10 business days written notice, no more than
+    once per calendar year.
+
+12. WHISTLEBLOWER PROTECTIONS
+    12.1 Nothing in this Agreement shall prohibit, restrict, or penalise any person
+    from: (a) reporting potential violations of law to any governmental agency or
+    regulatory authority, including the SEC, OSHA, or the NLRB; (b) making disclosures
+    protected under the Sarbanes-Oxley Act Section 806, the Dodd-Frank Act, or any
+    applicable whistleblower protection law; or (c) cooperating with a government
+    investigation.
+
+    12.2 The parties shall not retaliate against any individual who makes a protected
+    disclosure under applicable whistleblower statutes.
+
+13. WARRANTIES
+    13.1 Each party represents and warrants that: (a) it has full authority to enter
+    into this Agreement; (b) this Agreement does not conflict with any other agreement
+    to which it is a party; and (c) it will comply with all applicable laws and
+    regulations in performing its obligations.
+
+    13.2 Service Provider warrants that the Services will perform materially in
+    accordance with the documentation for a period of ninety (90) days following
+    delivery. In the event of a warranty breach, Service Provider's sole obligation
+    is to correct the non-conforming Service at no additional charge.
+
+    13.3 EXCEPT AS EXPRESSLY SET FORTH IN SECTION 13.2, NEITHER PARTY MAKES ANY
+    WARRANTIES, EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY
+    OR FITNESS FOR A PARTICULAR PURPOSE. THIS DISCLAIMER IS MUTUAL AND CONSPICUOUS
+    AS REQUIRED BY APPLICABLE LAW.
+
+14. PAYMENT TERMS
+    14.1 Client shall pay all undisputed invoices within Net 30 days of receipt.
+    14.2 Late payments shall accrue interest at the lesser of 1.5% per month or the
+    maximum rate permitted by applicable law.
+    14.3 Client may dispute invoices in good faith by written notice within 15 days
+    of receipt, and the parties shall resolve disputes within 30 days.
+
+15. GENERAL PROVISIONS
+    15.1 Entire Agreement. This Agreement, together with all Exhibits, constitutes the
+    entire agreement between the parties with respect to its subject matter and
+    supersedes all prior oral and written representations and agreements.
+
+    15.2 Amendment. This Agreement may only be amended by a written instrument signed
+    by authorised representatives of both parties.
+
+    15.3 Severability. If any provision of this Agreement is held invalid or
+    unenforceable, the remaining provisions shall continue in full force and effect.
+
+    15.4 Force Majeure. Neither party shall be liable for delays or failures in
+    performance resulting from causes beyond its reasonable control, including acts of
+    God, natural disasters, government actions, pandemics, or cyber-attacks, provided
+    the affected party: (a) gives written notice within 5 business days; (b) uses
+    commercially reasonable efforts to mitigate the impact; and (c) resumes performance
+    as soon as reasonably practicable.
+
+    15.5 Counterparts. This Agreement may be executed in counterparts, each of which
+    shall be deemed an original, and together shall constitute one and the same instrument.
+
+    15.6 Waiver. Failure to enforce any provision shall not constitute a waiver of
+    future enforcement rights.
+
+SIGNATURES
+Service Provider: ____________________    Date: ____________
+Client:          ____________________    Date: ____________
