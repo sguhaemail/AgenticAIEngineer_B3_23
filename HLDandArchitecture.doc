@@ -1,0 +1,367 @@
+AI-Powered Legal Document Review System (Multi-Agent Architecture)
+1. 📌 Overview
+1.1 Purpose
+
+The system automates legal document analysis using a multi-agent AI pipeline, leveraging Azure OpenAI and a legal knowledge base to:
+
+Extract clauses
+Validate compliance
+Assess risk
+Generate executive summaries
+Produce a final legal verdict
+1.2 Key Objectives
+Reduce manual legal review effort
+Ensure regulatory compliance (GDPR, HIPAA, SOX, etc.)
+Provide explainable AI-driven insights
+Enable scalable legal analysis
+2. 🧩 System Architecture
+2.1 High-Level Architecture Diagram
++----------------------+
+|      User (CLI)      |
++----------+-----------+
+           |
+           v
++-----------------------------+
+|     Orchestrator Layer      |
+|  (Main Async Controller)    |
++-------------+---------------+
+              |
+   -----------------------------------------
+   |         |            |                |
+   v         v            v                v
++--------+ +-------------+ +-------------+ +------------------+
+| Agent1 | |  Agent2     | |  Agent3     | |   Agent4         |
+| Ingest | | Clause Ext. | | Compliance  | | Summary Agent    |
++--------+ +-------------+ +-------------+ +------------------+
+     |           |               |                 |
+     |           |               |                 |
+     v           v               v                 v
+ Local File   Azure OpenAI   Azure OpenAI    Azure OpenAI
+              + Grounding    + Grounding     + Grounding
+                     \           |                /
+                      \          |               /
+                       ----------+---------------
+                                  |
+                                  v
+                        +-------------------+
+                        | Final Report Gen  |
+                        | (Orchestrator AI) |
+                        +-------------------+
+                                  |
+                                  v
+                        +-------------------+
+                        |  Output + Risk    |
+                        |  Dashboard        |
+                        +-------------------+
+2.2 Component Breakdown
+Component	Description
+User Interface (CLI)	Accepts document path
+Orchestrator Agent	Controls end-to-end workflow
+Document Ingestion Agent	Reads legal document
+Clause Extraction Agent	Extracts structured clauses
+Compliance Validation Agent	Validates against regulations
+Grounded Summary Agent	Generates executive summary
+Azure OpenAI	LLM processing engine
+Knowledge Base (RAG)	legaldoc_grounding.txt
+Risk Dashboard	Displays risk metrics
+3. 🔄 Sequence Diagram
+User
+ |
+ | Enter Document Path
+ v
+Orchestrator
+ |
+ |----> Document Ingestion Agent
+ |         |
+ |         | Read File
+ |         v
+ |     Document Text
+ |
+ |----> Clause Extraction Agent
+ |         |
+ |         | (LLM + Grounding)
+ |         v
+ |     Extracted Clauses (JSON)
+ |
+ |----> Compliance Validation Agent
+ |         |
+ |         | (LLM + Regulations)
+ |         v
+ |     Compliance Report
+ |
+ |----> Summary Agent
+ |         |
+ |         | (LLM + Context)
+ |         v
+ |     Executive Summary
+ |
+ |----> Orchestrator AI
+ |         |
+ |         | Combine all outputs
+ |         v
+ |     Final Legal Report
+ |
+ v
+User (Output + Risk Dashboard)
+4. 🧠 Multi-Agent Design Pattern
+4.1 Agent Responsibilities
+Agent	Responsibility
+Agent 1	Data ingestion
+Agent 2	NLP + clause structuring
+Agent 3	Compliance reasoning
+Agent 4	Business summarization
+Orchestrator	Decision-making & synthesis
+4.2 Design Pattern Used
+Orchestrator Pattern (Centralized Control)
+RAG (Retrieval-Augmented Generation)
+Pipeline Processing
+LLM-as-a-Service Architecture
+5. 📊 Data Flow
+Raw Document
+     ↓
+Text Extraction
+     ↓
+Clause JSON
+     ↓
+Compliance Report
+     ↓
+Executive Summary
+     ↓
+Final Consolidated Report
+6. 📚 Business Use Cases
+6.1 Primary Use Cases
+✅ Use Case 1: Legal Contract Review
+Upload contract
+Extract clauses
+Identify risky terms
+Get compliance status
+✅ Use Case 2: Regulatory Compliance Audit
+Validate document against:
+GDPR
+HIPAA
+SOX
+Highlight violations
+✅ Use Case 3: Risk Assessment
+Compute risk score (0–100)
+Identify critical issues
+Trigger escalation if >70
+✅ Use Case 4: Executive Reporting
+Generate summary for:
+Legal heads
+Business stakeholders
+Provide actionable insights
+✅ Use Case 5: Pre-Signing Contract Validation
+Analyze before approval
+Suggest corrections
+Provide verdict:
+APPROVED
+NEEDS REVISION
+REJECTED
+7. 🧾 Functional Requirements
+Upload legal document (local file)
+Extract structured clauses
+Perform compliance validation
+Generate executive summary
+Produce final legal verdict
+Display risk dashboard
+8. ⚙️ Non-Functional Requirements
+Category	Requirement
+Performance	Async processing for scalability
+Security	API key protection, secure endpoints
+Scalability	Multi-agent parallelizable design
+Reliability	Error handling via try/catch
+Maintainability	Modular agent-based architecture
+Observability	Logging at each stage
+9. 🔐 Security Considerations
+API key should be stored securely (NOT hardcoded)
+Sensitive legal data handling
+Role-based access (future enhancement)
+Encryption for data at rest/in transit
+10. ⚠️ Risks & Limitations
+LLM hallucination risk
+Dependency on grounding quality
+Regulatory updates require KB updates
+Large documents may hit token limitsAI-Powered Legal Document Review System (Multi-Agent Architecture)
+1. 📌 Overview
+1.1 Purpose
+
+The system automates legal document analysis using a multi-agent AI pipeline, leveraging Azure OpenAI and a legal knowledge base to:
+
+Extract clauses
+Validate compliance
+Assess risk
+Generate executive summaries
+Produce a final legal verdict
+1.2 Key Objectives
+Reduce manual legal review effort
+Ensure regulatory compliance (GDPR, HIPAA, SOX, etc.)
+Provide explainable AI-driven insights
+Enable scalable legal analysis
+2. 🧩 System Architecture
+2.1 High-Level Architecture Diagram
++----------------------+
+|      User (CLI)      |
++----------+-----------+
+           |
+           v
++-----------------------------+
+|     Orchestrator Layer      |
+|  (Main Async Controller)    |
++-------------+---------------+
+              |
+   -----------------------------------------
+   |         |            |                |
+   v         v            v                v
++--------+ +-------------+ +-------------+ +------------------+
+| Agent1 | |  Agent2     | |  Agent3     | |   Agent4         |
+| Ingest | | Clause Ext. | | Compliance  | | Summary Agent    |
++--------+ +-------------+ +-------------+ +------------------+
+     |           |               |                 |
+     |           |               |                 |
+     v           v               v                 v
+ Local File   Azure OpenAI   Azure OpenAI    Azure OpenAI
+              + Grounding    + Grounding     + Grounding
+                     \           |                /
+                      \          |               /
+                       ----------+---------------
+                                  |
+                                  v
+                        +-------------------+
+                        | Final Report Gen  |
+                        | (Orchestrator AI) |
+                        +-------------------+
+                                  |
+                                  v
+                        +-------------------+
+                        |  Output + Risk    |
+                        |  Dashboard        |
+                        +-------------------+
+2.2 Component Breakdown
+Component	Description
+User Interface (CLI)	Accepts document path
+Orchestrator Agent	Controls end-to-end workflow
+Document Ingestion Agent	Reads legal document
+Clause Extraction Agent	Extracts structured clauses
+Compliance Validation Agent	Validates against regulations
+Grounded Summary Agent	Generates executive summary
+Azure OpenAI	LLM processing engine
+Knowledge Base (RAG)	legaldoc_grounding.txt
+Risk Dashboard	Displays risk metrics
+3. 🔄 Sequence Diagram
+User
+ |
+ | Enter Document Path
+ v
+Orchestrator
+ |
+ |----> Document Ingestion Agent
+ |         |
+ |         | Read File
+ |         v
+ |     Document Text
+ |
+ |----> Clause Extraction Agent
+ |         |
+ |         | (LLM + Grounding)
+ |         v
+ |     Extracted Clauses (JSON)
+ |
+ |----> Compliance Validation Agent
+ |         |
+ |         | (LLM + Regulations)
+ |         v
+ |     Compliance Report
+ |
+ |----> Summary Agent
+ |         |
+ |         | (LLM + Context)
+ |         v
+ |     Executive Summary
+ |
+ |----> Orchestrator AI
+ |         |
+ |         | Combine all outputs
+ |         v
+ |     Final Legal Report
+ |
+ v
+User (Output + Risk Dashboard)
+4. 🧠 Multi-Agent Design Pattern
+4.1 Agent Responsibilities
+Agent	Responsibility
+Agent 1	Data ingestion
+Agent 2	NLP + clause structuring
+Agent 3	Compliance reasoning
+Agent 4	Business summarization
+Orchestrator	Decision-making & synthesis
+4.2 Design Pattern Used
+Orchestrator Pattern (Centralized Control)
+RAG (Retrieval-Augmented Generation)
+Pipeline Processing
+LLM-as-a-Service Architecture
+5. 📊 Data Flow
+Raw Document
+     ↓
+Text Extraction
+     ↓
+Clause JSON
+     ↓
+Compliance Report
+     ↓
+Executive Summary
+     ↓
+Final Consolidated Report
+6. 📚 Business Use Cases
+6.1 Primary Use Cases
+✅ Use Case 1: Legal Contract Review
+Upload contract
+Extract clauses
+Identify risky terms
+Get compliance status
+✅ Use Case 2: Regulatory Compliance Audit
+Validate document against:
+GDPR
+HIPAA
+SOX
+Highlight violations
+✅ Use Case 3: Risk Assessment
+Compute risk score (0–100)
+Identify critical issues
+Trigger escalation if >70
+✅ Use Case 4: Executive Reporting
+Generate summary for:
+Legal heads
+Business stakeholders
+Provide actionable insights
+✅ Use Case 5: Pre-Signing Contract Validation
+Analyze before approval
+Suggest corrections
+Provide verdict:
+APPROVED
+NEEDS REVISION
+REJECTED
+7. 🧾 Functional Requirements
+Upload legal document (local file)
+Extract structured clauses
+Perform compliance validation
+Generate executive summary
+Produce final legal verdict
+Display risk dashboard
+8. ⚙️ Non-Functional Requirements
+Category	Requirement
+Performance	Async processing for scalability
+Security	API key protection, secure endpoints
+Scalability	Multi-agent parallelizable design
+Reliability	Error handling via try/catch
+Maintainability	Modular agent-based architecture
+Observability	Logging at each stage
+9. 🔐 Security Considerations
+API key should be stored securely (NOT hardcoded)
+Sensitive legal data handling
+Role-based access (future enhancement)
+Encryption for data at rest/in transit
+10. ⚠️ Risks & Limitations
+LLM hallucination risk
+Dependency on grounding quality
+Regulatory updates require KB updates
+Large documents may hit token limits
